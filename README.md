@@ -2,7 +2,7 @@
 ## Desenvolvido para o curso técnico de Informática para Internet na ETEC de Praia Grande
 &nbsp;
 
-**Link**: [Lista de Compras](vercel.app)
+**Link**: [Lista de Compras](https://lista-de-compras-umber.vercel.app/)
 
 &nbsp;
 
