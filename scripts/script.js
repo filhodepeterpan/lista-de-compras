@@ -45,35 +45,39 @@ function adicionaItem(){
     
     const itemEscolhido = item.value.trim().toUpperCase();
 
-    if (itens.indexOf(itemEscolhido) == -1){
+    if(itemEscolhido != ""){
 
-        itens.push(itemEscolhido);
-        mensagemDeErro.innerHTML = "";
+        if (itens.indexOf(itemEscolhido) == -1){
 
+            itens.push(itemEscolhido);
+            mensagemDeErro.innerHTML = "";
+
+        }
+        else{
+            mensagemDeErro.innerHTML = `O item "${itemEscolhido}" já foi adicionado.`;
+        }
+
+        exibeItens();
     }
-    else{
-        mensagemDeErro.innerHTML = `O item "${itemEscolhido}" já foi adicionado.`;
-    }
-
-    exibeItens();
-
 }
 
 function removeItem(){
 
     const itemEscolhido = item.value.trim().toUpperCase();
 
-    if (itens.indexOf(itemEscolhido) != -1){
+    if(itemEscolhido != ""){
+        
+        if (itens.indexOf(itemEscolhido) != -1){
 
-        itens.splice(itens.indexOf(itemEscolhido), 1);
-        mensagemDeErro.innerHTML = "";
+            itens.splice(itens.indexOf(itemEscolhido), 1);
+            mensagemDeErro.innerHTML = "";
 
+        }
+        else{
+            mensagemDeErro.innerHTML = `O item "${itemEscolhido}" não está na lista.`;
+        }
+
+        exibeItens();
     }
-    else{
-        mensagemDeErro.innerHTML = `O item "${itemEscolhido}" não está na lista.`;
-    }
-
-    exibeItens();
-
 }
 
