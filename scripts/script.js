@@ -11,6 +11,12 @@ temaEscolhido.addEventListener("change", function(){
             }
         })
 
+        if(temaEscolhido.value == "night"){
+            const lista = document.getElementById("lista-itens")
+
+            lista.style.color = "#000000";
+        }
+
         document.documentElement.classList.add(temaEscolhido.value);
     }
     
