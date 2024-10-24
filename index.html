@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="mango">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.query.css">
+    <title>Lista de Compras</title>
+</head>
+<body>
+    <header>
+        <select name="tema" id="tema">
+            <option selected value="">Escolha o tema</option>
+            <option value="mango">Manga 🥭</option>
+            <option value="banana">Banana 🍌</option>
+            <option value="flowers">Perfumado 🌸</option>
+            <option value="pink">Rosa 🩷</option>
+            <option value="tech">Futurista 🤖</option>
+            <option value="night">Noite 🌃</option>
+        </select>
+    </header>
+    <div class="conteudo">
+
+        <div class="formulario">
+            <h1>Comece sua lista de compras!</h1>
+
+            <div class="formulario-itens">
+
+                <div class="formulario-dados">
+                    <label>Digite o nome do item:</label>
+                    <input type="text" name="item" id="item" maxlength="30">
+                </div>
+
+                <div class="formulario-botoes">
+                    <button id="adicionar" onclick="adicionaItem()">Adicionar</button>
+                    <button id="remover" onclick="removeItem()">Remover</button>
+                </div>
+
+            </div>
+            <p id="erro"></p>
+        </div>
+
+        <div class="lista">
+            <h2 id="lista-nome">Lista 🛍️</h2>
+            <p id="lista-itens"></p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Desenvolvido por Douglas Soares Santos</p>
+        <p>Github: filhodepeterpan</p>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

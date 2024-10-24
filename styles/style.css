@@ -1,0 +1,128 @@
+@import url(root.css);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: var(--cor-fundo);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: var(--fonte-padrao);
+    color: var(--cor-fonte);
+}
+
+header{
+    padding: 1rem 0;
+}
+
+#tema{
+    font-style: italic;
+    outline: none;
+    background: var(--cor-fundo);
+    border: none;
+    margin: 0 0 0 1rem;
+    padding: 0.5rem;
+}
+
+.conteudo{
+    height: 100%;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.formulario, .lista{
+    margin: 0 3rem;
+    padding: 2rem;
+    border-radius: var(--arredondamento);
+}
+
+.lista{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    max-width: 350px;
+}
+
+#lista-nome{
+    text-align: center;
+    color: var(--cor-lista);
+}
+
+#lista-itens{
+    margin: 1.5rem 0;
+}
+
+.formulario{
+    align-content: center;
+}
+
+.formulario h1{
+    font-family: var(--fonte-destaque);
+    font-size: var(--tamanho-titulo);
+    color: var(--cor-titulo);
+    text-align: center;
+}
+
+.formulario-itens{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formulario-dados{
+    display: flex;
+    flex-direction: column;
+    margin: 2.5rem 0;
+}
+
+#item{
+    padding: 0.5rem 0.3rem;
+    outline: none;
+}
+
+.formulario-botoes{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    border-radius: var(--arredondamento);
+    border: none;
+    padding: 1rem;
+    margin: 0 0.5rem;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#adicionar{
+    background-color: var(--cor-primaria);
+    color: var(--cor-fonte-botao);
+}   
+
+#remover{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-fonte-botao);
+}
+
+footer{
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 1.5rem 0;
+    color: white;
+    font-size: 0.75rem;
+}

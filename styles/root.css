@@ -1,0 +1,87 @@
+@font-face{
+    font-family: "Ethnocentric";
+    src: url(../fonts/ethnocentricRgIt.otf);
+}
+
+@font-face{
+    font-family: "JB Cursive";
+    src: url(../fonts/JBCursive.otf);
+}
+
+:root{
+    --fonte-padrao: "Arial";
+    --arredondamento: 6px;
+    --tamanho-titulo: 2rem;
+}
+
+:root.mango{
+    --fonte-destaque: "Arial";
+    --tamanho-titulo: 2rem;
+    --cor-fundo: linear-gradient(#8A090E, #D72223, #FC6633, #FFAD2D, #FFC932, #FEE04B, #E4D756, #9AB542, #769A20);
+    --cor-primaria: green;
+    --cor-secundaria: red;
+    --cor-fonte-botao: white;
+    --cor-lista: green;
+    --cor-fonte: black;
+    --cor-titulo: black;
+}
+
+:root.banana{
+    --fonte-destaque: "Arial";
+    --tamanho-titulo: 2rem;
+    --cor-fundo: linear-gradient(rgb(255, 255, 54), yellow, black);
+    --cor-primaria: black;
+    --cor-secundaria: grey;
+    --cor-fonte-botao: white;
+    --cor-lista: black;
+    --cor-fonte: black;
+    --cor-titulo: black;
+}
+
+:root.flowers{
+    --tamanho-titulo: 1.8rem;
+    --fonte-destaque: "JB Cursive";
+    --cor-fundo: linear-gradient(rgb(146, 244, 255), rgb(200, 4, 174));
+    --cor-primaria: rgb(146, 244, 255);
+    --cor-secundaria: rgb(255, 107, 70);
+    --cor-fonte-botao: black;
+    --cor-lista: rgb(255, 107, 70);
+    --cor-fonte: black;
+    --cor-titulo: black;
+}
+
+:root.pink{
+    --tamanho-titulo: 2rem;
+    --fonte-destaque: "Arial";
+    --cor-fundo: linear-gradient(rgb(255, 255, 255), rgb(255, 45, 175));
+    --cor-primaria: rgb(255, 45, 175);
+    --cor-secundaria: black;
+    --cor-fonte-botao: white;
+    --cor-lista: rgb(255, 45, 175);
+    --cor-fonte: black;
+    --cor-titulo: black;
+}
+
+:root.tech{
+    --tamanho-titulo: 1.4rem;
+    --fonte-destaque: "Ethnocentric";
+    --cor-fundo: linear-gradient(rgb(89, 89, 89), rgb(159, 186, 255));
+    --cor-primaria: rgb(0, 98, 255);
+    --cor-secundaria: rgb(26, 26, 26);
+    --cor-fonte-botao: white;
+    --cor-lista: rgb(0, 98, 255);
+    --cor-fonte: black;
+    --cor-titulo: black;
+}
+
+:root.night{
+    --tamanho-titulo: 2rem;
+    --fonte-destaque: "Arial";
+    --cor-fundo: linear-gradient(rgb(5, 0, 29), rgb(47, 0, 255));
+    --cor-primaria: yellow;
+    --cor-secundaria: grey;
+    --cor-fonte-botao: black;
+    --cor-lista: rgb(10, 0, 255);
+    --cor-fonte: white;
+    --cor-titulo: yellow;
+}

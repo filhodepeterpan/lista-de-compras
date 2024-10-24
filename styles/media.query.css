@@ -1,0 +1,22 @@
+@import url(root.css);
+
+@media(max-width:1200px){
+    .conteudo{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .formulario{
+        margin: 0;
+    }
+
+    .formulario-itens{
+        flex-direction: column;
+    }
+
+    .lista{
+        width: auto;
+        max-width: auto;
+        margin: 1rem;
+    }
+}
