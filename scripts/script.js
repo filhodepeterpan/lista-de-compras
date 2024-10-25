@@ -39,6 +39,8 @@ function exibeItens(){
         lista.innerHTML += `${numeroItem}. ${item}<hr><br>`;
     })
 
+    item.value = "";
+
 }
 
 function adicionaItem(){
@@ -79,5 +81,10 @@ function removeItem(){
 
         exibeItens();
     }
+}
+
+function removeTodosOsItens(){
+    itens = [];
+    exibeItens();
 }
 

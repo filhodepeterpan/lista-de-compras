@@ -84,7 +84,7 @@ header{
 .formulario-dados{
     display: flex;
     flex-direction: column;
-    margin: 2.5rem 0;
+    margin: 2.5rem 1rem;
 }
 
 #item{
@@ -115,9 +115,13 @@ button:hover{
     color: var(--cor-fonte-botao);
 }   
 
-#remover{
+#remover, #removerTudo{
     background-color: var(--cor-secundaria);
     color: var(--cor-fonte-botao);
+}
+
+#removerTudo{
+    font-weight: 600;
 }
 
 footer{
