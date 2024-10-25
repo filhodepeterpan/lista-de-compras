@@ -84,7 +84,16 @@ function removeItem(){
 }
 
 function removeTodosOsItens(){
-    itens = [];
-    exibeItens();
+
+    if (itens.length > 0){
+        
+        const confirmacao = confirm("Após clicar em \"OK\" não será possível restaurar a lista. Você tem certeza de que deseja remover todos os itens?" );
+        
+        if(confirmacao){
+            itens = [];
+            exibeItens();
+        }
+    }
+
 }
 
