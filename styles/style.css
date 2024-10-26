@@ -24,6 +24,10 @@ header{
     padding: 1rem 0;
 }
 
+input{
+    background-color: #FFFFFF;
+}
+
 #tema{
     font-style: italic;
     outline: none;
