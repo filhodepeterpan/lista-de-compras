@@ -57,6 +57,7 @@ input{
     flex-direction: column;
     width: 350px;
     max-width: 350px;
+    max-height: 400px;
 }
 
 #lista-nome{
@@ -66,6 +67,11 @@ input{
 
 #lista-itens{
     margin: 1.5rem 0;
+    overflow-y: scroll;
+}
+
+.lista-itens-item{
+    margin: 0 0.5rem 0 0;
 }
 
 .formulario{

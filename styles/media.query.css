@@ -31,4 +31,7 @@
         max-width: auto;
         margin: 1rem;
     }
+    .lista-itens{
+        overflow-y: visible;
+    }
 }
