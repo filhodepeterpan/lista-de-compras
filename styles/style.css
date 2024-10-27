@@ -74,6 +74,10 @@ input{
     margin: 0 0.5rem 0 0;
 }
 
+.lista-itens-item:hover{
+    cursor: pointer;
+}
+
 .formulario{
     align-content: center;
 }

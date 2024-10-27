@@ -36,9 +36,10 @@ function exibeItens() {
 
         numeroItem = itens.indexOf(item) + 1;
 
-        lista.innerHTML += `<input type="checkbox" class="lista-itens-item" id="item${numeroItem}">${item}</input><hr><br>`;
+        lista.innerHTML += `<input type="checkbox" class="lista-itens-item" id="item${numeroItem}"><span class="lista-itens-item-texto">${item}</span></input><hr><br>`;
 
     });
+
     item.value = "";
 
 }
@@ -70,13 +71,14 @@ item.addEventListener("keydown", function (event) {
     }
 });
 
+
 function removeItem() {
 
     const itensCheckbox = document.querySelectorAll(".lista-itens-item");
 
     itensCheckbox.forEach(itemCheckbox => {
 
-        const itemMarcado = itemCheckbox.nextSibling.textContent.trim().toUpperCase();
+        const itemMarcado = itemCheckbox.nextSibling.textContent;
         const index = itens.indexOf(itemMarcado);
 
         if (itemCheckbox.checked && index != -1) {
