@@ -90,7 +90,7 @@ function removeItem() {
     const itensCheckbox = document.querySelectorAll(".lista-itens-item");
     const marcados = contaItensMarcados();
 
-    if (itens.length > 0) {
+    if (marcados > 0) {
 
         const confirmacao = confirm(`Você tem certeza de que deseja remover ${marcados} itens? Após clicar em \"OK\" não será possível restaurar a lista.`);
 
