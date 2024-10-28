@@ -39,9 +39,9 @@ input{
 
 .conteudo{
     height: 100%;
-    align-content: center;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 3rem 0;
 }
 
