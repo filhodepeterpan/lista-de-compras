@@ -44,6 +44,19 @@ function exibeItens() {
 
 }
 
+function contaItensMarcados(){
+    const itensCheckbox = document.querySelectorAll(".lista-itens-item");
+    let marcados = 0;
+
+    itensCheckbox.forEach(itemCheckbox => {
+        if (itemCheckbox.checked) {
+            marcados++;
+        }
+    });
+
+    return marcados;
+}
+
 function adicionaItem() {
 
     const itemEscolhido = item.value.trim().toUpperCase();
@@ -75,26 +88,33 @@ item.addEventListener("keydown", function (event) {
 function removeItem() {
 
     const itensCheckbox = document.querySelectorAll(".lista-itens-item");
+    const marcados = contaItensMarcados();
 
-    itensCheckbox.forEach(itemCheckbox => {
+    if (itens.length > 0) {
 
-        const itemMarcado = itemCheckbox.nextSibling.textContent;
-        const index = itens.indexOf(itemMarcado);
+        const confirmacao = confirm(`Você tem certeza de que deseja remover ${marcados} itens? Após clicar em \"OK\" não será possível restaurar a lista.`);
 
-        if (itemCheckbox.checked && index != -1) {
-            itens.splice(index, 1);
+        if (confirmacao) {
+            itensCheckbox.forEach(itemCheckbox => {
+
+                const itemMarcado = itemCheckbox.nextSibling.textContent;
+                const index = itens.indexOf(itemMarcado);
+        
+                if (itemCheckbox.checked && index != -1) {
+                    itens.splice(index, 1);
+                }
+            });
+        
+            exibeItens();
         }
-    });
-
-    exibeItens();
-
+    }
 }
 
 function removeTodosOsItens() {
 
     if (itens.length > 0) {
 
-        const confirmacao = confirm("Após clicar em \"OK\" não será possível restaurar a lista. Você tem certeza de que deseja remover todos os itens?");
+        const confirmacao = confirm("Você tem certeza de que deseja remover todos os itens? Após clicar em \"OK\" não será possível restaurar a lista.");
 
         if (confirmacao) {
             itens = [];
@@ -104,3 +124,11 @@ function removeTodosOsItens() {
 
 }
 
+function selecionaTodos(){
+    const itensCheckbox = document.querySelectorAll(".lista-itens-item");
+
+    itensCheckbox.forEach(itemCheckbox => {
+        itemCheckbox.checked = true;
+    });
+
+}

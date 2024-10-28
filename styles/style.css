@@ -55,6 +55,7 @@ input{
     background-color: white;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 350px;
     max-width: 350px;
     max-height: 400px;
@@ -67,6 +68,7 @@ input{
 
 #lista-itens{
     margin: 1.5rem 0;
+    padding-bottom: 15rem;
     overflow-y: scroll;
 }
 
